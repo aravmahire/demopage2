@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Saisha 🌸</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond for elegant serif headings and Plus Jakarta Sans for clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for minimal icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blush: '#fdfbf7',
+                        warmrose: '#e8a598',
+                        softpeach: '#f4dcd6',
+                        deepcocoa: '#4a3b32',
+                        mutedtaupe: '#8c7a70',
+                        cream: '#f9f6f0',
+                        sand: '#eaddcf'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfbf7;
+            color: #4a3b32;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4dcd6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e8a598;
+            border-radius: 4px;
+        }
+        /* Floating particle animation */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+            50% { transform: translateY(-15px) rotate(5deg); opacity: 1; }
+            100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+        }
+        .floating-star {
+            animation: float 4s ease-in-out infinite;
+        }
+        .floating-star-delayed {
+            animation: float 6s ease-in-out infinite 2s;
+        }
+        /* Bounce animation for cute stickers */
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .sticker-bounce {
+            animation: bounce-slow 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-blush text-deepcocoa min-h-screen flex flex-col justify-between selection:bg-softpeach selection:text-deepcocoa">
+
+    <!-- Floating background decorative elements -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute top-10 left-10 text-warmrose opacity-30 text-2xl floating-star">✦</div>
+        <div class="absolute top-1/4 right-12 text-warmrose opacity-20 text-3xl floating-star-delayed">✧</div>
+        <div class="absolute bottom-1/3 left-16 text-warmrose opacity-25 text-xl floating-star">👑</div>
+        <div class="absolute bottom-12 right-24 text-warmrose opacity-30 text-2xl floating-star-delayed">☕</div>
+    </div>
+
+    <!-- Navigation / Tabs Bar -->
+    <header class="w-full sticky top-0 z-50 bg-blush/85 backdrop-blur-md border-b border-sand/40 transition-all">
+        <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-serif text-2xl md:text-3xl font-bold tracking-wide text-deepcocoa flex items-center gap-2">
+                <span>Saisha</span> <span class="text-warmrose text-lg">👑</span>
+            </div>
+            <nav class="flex space-x-2 md:space-x-4">
+                <button onclick="switchTab('tab-oct8')" id="btn-oct8" class="tab-btn px-4 py-2 rounded-full text-sm md:text-base font-medium transition-all bg-warmrose text-white shadow-sm">
+                    October 8
+                </button>
+                <button onclick="switchTab('tab-letter')" id="btn-letter" class="tab-btn px-4 py-2 rounded-full text-sm md:text-base font-medium transition-all text-mutedtaupe hover:text-deepcocoa hover:bg-sand/30">
+                    Letter
+                </button>
+                <button onclick="switchTab('tab-thanks')" id="btn-thanks" class="tab-btn px-4 py-2 rounded-full text-sm md:text-base font-medium transition-all text-mutedtaupe hover:text-deepcocoa hover:bg-sand/30">
+                    THANX
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-6 py-12 z-10 relative">
+
+        <!-- TAB 1: OCTOBER 8 -->
+        <section id="tab-oct8" class="tab-content space-y-12 animate-fadeIn">
+            <!-- Hero / Big Letter Section -->
+            <div class="text-center space-y-6 pt-6">
+                <!-- Cute Sticker Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-softpeach/70 text-deepcocoa text-xs md:text-sm font-semibold tracking-wider uppercase mb-2 sticker-bounce shadow-sm">
+                    <span>👑 Malkin Jii’s Special Day</span> <span>✨</span>
+                </div>
+                <h1 class="font-serif text-6xl md:text-8xl font-bold text-deepcocoa tracking-tight leading-none">
+                    Happy <span class="text-warmrose italic font-serif">Birthday</span>
+                </h1>
+                <p class="text-lg md:text-xl text-mutedtaupe max-w-xl mx-auto font-light leading-relaxed">
+                    Celebrating Saisha on October 8th — the one and only Malkin Jii whose presence makes everyday life infinitely more lively, thoughtful, and bright.
+                </p>
+            </div>
+
+            <!-- Interactive Birthday Note Box -->
+            <div class="bg-cream border border-sand/60 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-warmrose opacity-10 font-serif text-9xl pointer-events-none">8</div>
+                <div class="max-w-2xl space-y-6 relative z-10">
+                    <div class="flex items-center justify-between">
+                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-deepcocoa">
+                            Happy Birthday, Malkin Jii!
+                        </h2>
+                        <span class="text-3xl sticker-bounce">🐱</span>
+                    </div>
+                    <p class="text-base md:text-lg text-deepcocoa/80 leading-relaxed font-light">
+                        Today marks the exact date someone truly remarkable came into this world. Saisha, your sharp wit, your unmatched vibe, and your amazing energy completely change the atmosphere around you for the better.
+                    </p>
+                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-sand/40">
+                        <span class="text-sm font-medium text-mutedtaupe tracking-wide flex items-center gap-1.5">
+                            <span>☕</span> Wishing you a year full of success & peace
+                        </span>
+                        <div class="flex items-center gap-3">
+                            <button onclick="switchTab('tab-thanks')" class="px-5 py-2.5 rounded-full bg-deepcocoa text-cream text-sm font-medium hover:bg-deepcocoa/90 transition shadow-sm flex items-center gap-2">
+                                <span>THANX Button</span> <i class="fa-solid fa-gift text-xs text-warmrose"></i>
+                            </button>
+                            <button onclick="triggerConfetti()" class="px-5 py-2.5 rounded-full bg-warmrose text-white text-sm font-medium hover:bg-warmrose/90 transition shadow-sm flex items-center gap-2">
+                                <span>Celebrate</span> <i class="fa-solid fa-sparkles text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Highlight Cards with Cute Stickers -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                <div class="bg-cream/60 border border-sand/40 rounded-2xl p-6 text-center space-y-3 relative hover:border-warmrose/40 transition">
+                    <div class="text-3xl mb-1 sticker-bounce">👑</div>
+                    <h3 class="font-serif text-xl font-bold">Malkin Jii Status</h3>
+                    <p class="text-sm text-mutedtaupe">Unchallenged leadership in picking where to eat and keeping order.</p>
+                </div>
+                <div class="bg-cream/60 border border-sand/40 rounded-2xl p-6 text-center space-y-3 relative hover:border-warmrose/40 transition">
+                    <div class="text-3xl mb-1 sticker-bounce">☕</div>
+                    <h3 class="font-serif text-xl font-bold">Endless Vibe</h3>
+                    <p class="text-sm text-mutedtaupe">Great conversations fueled by absolute honesty and humor.</p>
+                </div>
+                <div class="bg-cream/60 border border-sand/40 rounded-2xl p-6 text-center space-y-3 relative hover:border-warmrose/40 transition">
+                    <div class="text-3xl mb-1 sticker-bounce">🌸</div>
+                    <h3 class="font-serif text-xl font-bold">Pure Comfort</h3>
+                    <p class="text-sm text-mutedtaupe">Having you around makes even the busiest days feel completely effortless.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: LETTER -->
+        <section id="tab-letter" class="tab-content hidden space-y-10 animate-fadeIn">
+            <div class="text-center space-y-4 pt-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-softpeach/70 text-deepcocoa text-xs md:text-sm font-semibold tracking-widest uppercase mb-2 shadow-sm">
+                    <span>💌 A Heartfelt Note</span>
+                </div>
+                <h2 class="font-serif text-5xl md:text-7xl font-bold text-deepcocoa tracking-tight">
+                    For <span class="text-warmrose italic font-serif">Saisha</span>
+                </h2>
+                <p class="text-lg text-mutedtaupe max-w-lg mx-auto font-light">
+                    A special letter of thanks to Malkin Jii for being in my life.
+                </p>
+            </div>
+
+            <!-- Heartfelt Letter Container (Mixed Hindi-English / Hinglish) -->
+            <div class="bg-cream border border-sand/60 rounded-3xl p-8 md:p-14 shadow-sm relative space-y-6">
+                <div class="absolute top-8 right-8 text-3xl sticker-bounce">👑</div>
+                <h3 class="font-serif text-3xl font-bold text-deepcocoa">Dear Saisha / Malkin Jii,</h3>
+                
+                <div class="space-y-4 text-deepcocoa/80 text-base md:text-lg font-light leading-relaxed">
+                    <p>
+                        Jab bhi main sochta hoon, toh yehi realize hota hai ki life kitni better aur sorted ho gayi hai jab se aap meri life mein aaye ho. Aapka hona hi sab kuch kitna peaceful aur balanced bana deta hai.
+                    </p>
+                    <p>
+                        Thank you so much for being in my life! Waise toh main ek number ka <strong>pgl</strong> hoon aur aapko pareshan karta rehta hoon, par aap phir bhi sab kuch kitne acche se handle karte ho. Par ek baat batau, aapka yeh har <strong>"hmm okk"</strong> msg mujhe thodi si tension de deta hai ki pata nahi ab kya ho gaya! 😅
+                    </p>
+                    <p>
+                        Malkin Jii, aapki har cheez handle karne ki style aur sharp mind ki main bohot respect karta hoon. Aapke hone se life mein kabhi boring moments nahi hote.
+                    </p>
+                    <p class="pt-2 font-serif italic text-xl text-warmrose">
+                        Wishing you a very Happy Birthday! May this October 8th and the year ahead bring you all the success and happiness you truly deserve.
+                    </p>
+                </div>
+
+                <div class="pt-6 border-t border-sand/40 flex items-center justify-between">
+                    <div class="text-sm font-medium text-mutedtaupe flex items-center gap-2">
+                        <span>With high respect & appreciation</span> <span class="text-warmrose">✦</span>
+                    </div>
+                    <div class="font-serif text-xl font-bold text-deepcocoa text-right">
+                        <span>aapka bhakt,</span><br>
+                        <span class="text-warmrose">Arav</span> <span class="text-xs text-mutedtaupe">(aapka pgl)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: THANX -->
+        <section id="tab-thanks" class="tab-content hidden space-y-10 animate-fadeIn">
+            <div class="text-center space-y-4 pt-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-softpeach/70 text-deepcocoa text-xs md:text-sm font-semibold tracking-widest uppercase mb-2 shadow-sm">
+                    <span>✨ Special Appreciation</span>
+                </div>
+                <h2 class="font-serif text-5xl md:text-7xl font-bold text-deepcocoa tracking-tight">
+                    Saying <span class="text-warmrose italic font-serif">THANX</span>
+                </h2>
+            </div>
+
+            <!-- Big Interactive THANX Section Card -->
+            <div class="bg-cream border border-sand/60 rounded-3xl p-8 md:p-14 text-center space-y-8 shadow-sm">
+                <div class="flex justify-center items-center gap-4">
+                    <span class="text-4xl sticker-bounce">🌸</span>
+                    <span class="text-4xl sticker-bounce">👑</span>
+                    <span class="text-4xl sticker-bounce">☕</span>
+                </div>
+                <div class="space-y-3 max-w-xl mx-auto">
+                    <h3 class="font-serif text-3xl font-bold text-deepcocoa">A Special Note of Thanks</h3>
+                    <p class="text-mutedtaupe font-light">
+                        Click the button below to trigger the ultimate gratitude surprise for Saisha!
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button onclick="triggerThanksPopup(); triggerConfetti();" class="px-8 py-4 rounded-full bg-warmrose text-white text-lg font-bold hover:bg-warmrose/90 transition shadow-md hover:scale-105 transform duration-200 flex items-center gap-3 mx-auto">
+                        <span>THANX MALKIN JII!</span> <i class="fa-solid fa-gift"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sweet Surprise Modal / Popup -->
+    <div id="thanksModal" class="fixed inset-0 bg-deepcocoa/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-cream border border-sand rounded-3xl p-8 max-w-md w-full shadow-xl text-center space-y-4 relative animate-fadeIn">
+            <button onclick="closeThanksPopup()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-softpeach flex items-center justify-center text-deepcocoa font-bold hover:bg-warmrose hover:text-white transition">×</button>
+            <div class="text-4xl sticker-bounce pt-2">💌</div>
+            <h3 class="font-serif text-3xl font-bold text-deepcocoa">THANX Malkin Jii!</h3>
+            <p class="text-mutedtaupe text-sm leading-relaxed">
+                "Thank you, Malkin Jii, ordinary days ko amazing banane ke liye, is pgl ko sambhalne ke liye, aur thanx for reading my stupid things! Happy Birthday!"
+            </p>
+            <div class="pt-2">
+                <button onclick="closeThanksPopup();" class="px-6 py-2.5 rounded-full bg-deepcocoa text-cream text-sm font-medium hover:bg-deepcocoa/90 transition shadow-sm">
+                    You're Welcome! ✨
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-sand/40 py-8 text-center text-sm text-mutedtaupe z-10">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>Made with warmth & respect by Arav for Saisha 🌸</p>
+            <p class="font-serif text-base text-deepcocoa">Malkin Jii’s Birthday 👑</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Tab Switching, Modal, and Confetti Effect -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            // Reset all buttons styling
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-warmrose', 'text-white', 'shadow-sm');
+                btn.classList.add('text-mutedtaupe', 'hover:text-deepcocoa', 'hover:bg-sand/30');
+            });
+
+            // Show selected tab
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Highlight corresponding button
+            const activeBtnId = 'btn-' + tabId.replace('tab-', '');
+            const activeBtn = document.getElementById(activeBtnId);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-mutedtaupe', 'hover:text-deepcocoa', 'hover:bg-sand/30');
+                activeBtn.classList.add('bg-warmrose', 'text-white', 'shadow-sm');
+            }
+
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function triggerThanksPopup() {
+            document.getElementById('thanksModal').classList.remove('hidden');
+        }
+
+        function closeThanksPopup() {
+            document.getElementById('thanksModal').classList.add('hidden');
+        }
+
+        // Simple lightweight confetti/sparkle effect generator
+        function triggerConfetti() {
+            const symbols = ['✦', '👑', '🌸', '✨', '☕'];
+            const colors = ['#e8a598', '#f4dcd6', '#eaddcf', '#4a3b32', '#8c7a70'];
+            for (let i = 0; i < 35; i++) {
+                const particle = document.createElement('div');
+                particle.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+                particle.style.position = 'fixed';
+                particle.style.left = Math.random() * window.innerWidth + 'px';
+                particle.style.top = '-20px';
+                particle.style.color = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.fontSize = (Math.random() * 16 + 12) + 'px';
+                particle.style.zIndex = '9999';
+                particle.style.pointerEvents = 'none';
+                particle.style.transition = 'transform 2.5s ease-out, opacity 2.5s ease-out';
+                
+                document.body.appendChild(particle);
+
+                const destinationX = (Math.random() - 0.5) * 200;
+                const destinationY = window.innerHeight + 50;
+
+                setTimeout(() => {
+                    particle.style.transform = `translate(${destinationX}px, ${destinationY}px) rotate(${Math.random() * 360}deg)`;
+                    particle.style.opacity = '0';
+                }, 50);
+
+                setTimeout(() => {
+                    particle.remove();
+                }, 2600);
+            }
+        }
+    </script>
+</body>
+</html>
